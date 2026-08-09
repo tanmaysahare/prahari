@@ -1,0 +1,122 @@
+{
+  "NOTE": "ALL RESULTS ARE SIMULATION (discrete-event fleet model).",
+  "config": {
+    "n_wells": 400,
+    "days": 365,
+    "n_rigs": 3,
+    "reps": 12,
+    "health_estimate_sigma": 0.043,
+    "job_days_preemptive": 2.0,
+    "job_days_failure": 4.5
+  },
+  "mean_by_policy": {
+    "do_nothing": {
+      "produced_t": 271015.9648420407,
+      "recovery_pct": 64.71730396428659,
+      "n_failures": 112.16666666666667,
+      "n_jobs": 0.0,
+      "marginal_t_per_rig_day": NaN,
+      "marginal_t": 0.0,
+      "rig_utilisation_pct": 0.0
+    },
+    "reactive": {
+      "produced_t": 296977.3122181013,
+      "recovery_pct": 70.91588506805992,
+      "n_failures": 121.75,
+      "n_jobs": 114.41666666666667,
+      "marginal_t_per_rig_day": 50.460612159783885,
+      "marginal_t": 25961.347376060643,
+      "rig_utilisation_pct": 47.020547945205486
+    },
+    "calendar": {
+      "produced_t": 306348.07730791613,
+      "recovery_pct": 73.159670363317,
+      "n_failures": 105.25,
+      "n_jobs": 199.75,
+      "marginal_t_per_rig_day": 53.72558953709708,
+      "marginal_t": 35332.112465875434,
+      "rig_utilisation_pct": 60.07610350076103
+    },
+    "rate_first": {
+      "produced_t": 297760.4812882081,
+      "recovery_pct": 71.10229849472267,
+      "n_failures": 121.75,
+      "n_jobs": 114.41666666666667,
+      "marginal_t_per_rig_day": 51.95703704419183,
+      "marginal_t": 26744.51644616744,
+      "rig_utilisation_pct": 47.020547945205486
+    },
+    "prahari": {
+      "produced_t": 347712.2178090974,
+      "recovery_pct": 83.03251044472391,
+      "n_failures": 35.333333333333336,
+      "n_jobs": 524.0,
+      "marginal_t_per_rig_day": 70.39631984024574,
+      "marginal_t": 76696.25296705669,
+      "rig_utilisation_pct": 99.49391171993913
+    }
+  },
+  "prahari_vs_reactive": {
+    "production_uplift_pct_mean": 17.098128051252957,
+    "production_uplift_pct_std": 1.229289282052896,
+    "extra_tonnes_per_year_mean": 50734.90559099605,
+    "paired_t_stat": 49.39957734182263,
+    "paired_p_value": 2.871933809065356e-14,
+    "failures_avoided_pct": 70.97878165639972,
+    "marginal_t_per_rig_day_prahari": 70.39631984024574,
+    "marginal_t_per_rig_day_reactive": 50.460612159783885,
+    "marginal_t_per_rig_day_gain_pct": 39.50746300368948,
+    "wells_serviced_pct_reactive": 28.60416666666667
+  },
+  "prahari_vs_calendar": {
+    "production_uplift_pct_mean": 13.504854589826465,
+    "production_uplift_pct_std": 1.0475140942398766,
+    "paired_t_stat": 40.502279002833255,
+    "paired_p_value": 2.523692786116001e-13,
+    "marginal_t_per_rig_day_gain_pct": 31.02940413829738
+  },
+  "sensitivity_to_health_estimate_noise": [
+    {
+      "est_sigma": 0.0,
+      "produced_t": 339758.1233558308,
+      "recovery_pct": 82.65700945242287,
+      "n_failures": 36,
+      "uplift_vs_calendar_pct": 14.488091303353578
+    },
+    {
+      "est_sigma": 0.02,
+      "produced_t": 339310.0565162845,
+      "recovery_pct": 82.54800289026657,
+      "n_failures": 35,
+      "uplift_vs_calendar_pct": 14.337106488835216
+    },
+    {
+      "est_sigma": 0.043,
+      "produced_t": 338254.95501792064,
+      "recovery_pct": 82.29131576925788,
+      "n_failures": 40,
+      "uplift_vs_calendar_pct": 13.981569568964524
+    },
+    {
+      "est_sigma": 0.08,
+      "produced_t": 336248.7113459932,
+      "recovery_pct": 81.80323295164501,
+      "n_failures": 49,
+      "uplift_vs_calendar_pct": 13.305526840626737
+    },
+    {
+      "est_sigma": 0.15,
+      "produced_t": 332173.55580416595,
+      "recovery_pct": 80.81182127673377,
+      "n_failures": 57,
+      "uplift_vs_calendar_pct": 11.932324118820258
+    },
+    {
+      "est_sigma": 0.25,
+      "produced_t": 323289.2685242362,
+      "recovery_pct": 78.65043478677454,
+      "n_failures": 85,
+      "uplift_vs_calendar_pct": 8.938591156019072
+    }
+  ]
+}

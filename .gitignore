@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.DS_Store
+.idea/
+.vscode/
+
+# large regenerable intermediate (rebuilt by exp2 on first run)
+results/*_train_cache.npz

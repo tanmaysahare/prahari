@@ -1,0 +1,29 @@
+Copyright (c) 2026 Tanmay Sahare
+
+PRAHARI - Predictive Rod-lift Asset Health And Rig Intelligence
+
+SOURCE-AVAILABLE LICENCE (all rights reserved)
+
+Permission is granted to any person obtaining a copy of this software and the
+associated documentation to:
+
+  (a) view, download and read the source code and documents;
+  (b) execute the software for the purposes of evaluation, verification,
+      reproduction of the published results, academic study and teaching;
+  (c) quote short excerpts with attribution.
+
+All other rights are reserved by the copyright holder. In particular, no licence
+is granted, expressly or by implication, estoppel or otherwise, to any patent,
+patent application or other intellectual property right, and no permission is
+granted for commercial use, redistribution of modified versions, or
+incorporation into a commercial product or service, without prior written
+permission from the copyright holder.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+NOTE ON RESULTS: every quantitative result in this repository is a SIMULATION
+result. No field data has been used, and no hardware has been built or tested.

@@ -1,0 +1,117 @@
+{
+  "NOTE": "ALL RESULTS ARE SIMULATION. No field data used.",
+  "n_wells": 64,
+  "noise_power_pct": 1.5,
+  "calibration_blind": {
+    "M_abs_err_pct_median": 8.082501309112619,
+    "M_abs_err_pct_p90": 34.908582714711,
+    "M_err_pct_mean_bias": 3.1517264743106854,
+    "tau_abs_err_deg_median": 0.3986457525835982,
+    "tau_abs_err_deg_p90": 2.3318800797998467
+  },
+  "health": {
+    "fillage_MAE_prahari": 0.04658243938281192,
+    "fillage_MAE_fixedcal_ablation": 0.08434343234520433,
+    "Fo_abs_err_pct_median": 33.65515466010289
+  },
+  "classification": {
+    "accuracy_prahari": 0.734375,
+    "accuracy_fixedcal_ablation": 0.46875,
+    "accuracy_ml_physicsfree": 0.71875,
+    "macroF1_prahari": 0.7234313512854534,
+    "macroF1_fixedcal_ablation": 0.46314847325876735,
+    "macroF1_ml_physicsfree": 0.7186970182809966
+  },
+  "confusion_labels": [
+    "normal",
+    "fluid_pound",
+    "gas_interference",
+    "tv_leak",
+    "sv_leak",
+    "worn_pump",
+    "rod_part",
+    "tagging"
+  ],
+  "confusion_prahari": [
+    [
+      4,
+      0,
+      0,
+      1,
+      2,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      4,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      7,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      1,
+      0,
+      4,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      8,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      7,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      8
+    ]
+  ]
+}
